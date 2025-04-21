@@ -126,6 +126,43 @@ nav {
   background-color: var(--color-primary-dark);
 }
 
+.menu__container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.dish__card {
+  margin: 30px 0px;
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-secondary-bright)
+}
+
+.dish__card h3 {
+  color: var(--color-secondary);
+  margin: 20px 0;
+}
+
+.dish__card p {
+  margin: 20px 0;
+}
+
+.dish__card a {
+  text-decoration: none;
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.dish__card a:hover {
+  text-decoration: underline;
+}
+
+.menu__container h2 {
+  margin: 40px 0;
+}
+
 
 /* tablet */ 
 @media (min-width: 768px) and (max-width: 1099px) {
