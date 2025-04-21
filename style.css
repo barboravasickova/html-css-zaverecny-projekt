@@ -51,7 +51,7 @@ h3 {
 }
 
 header {
-  padding: 50px 0;
+  padding: 20px 0;
 }
 
 .header__container {
@@ -129,7 +129,6 @@ nav {
 .dishes__container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: space-between;
   text-align: center;
   margin-bottom: 30px;
@@ -213,7 +212,7 @@ nav {
 }
 
 .delivery__text p {
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 .delivery__background {
@@ -243,6 +242,13 @@ footer .adresa, .footer__menu, .copyright {
   margin: 20px 0;
 }
 
+.footer__menu {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+
 /* tablet */ 
 @media (min-width: 768px) and (max-width: 1099px) {
   h1 {
@@ -259,7 +265,7 @@ footer .adresa, .footer__menu, .copyright {
     max-width: 1100px;
   }
   header {
-    padding: 80px 0;
+    padding: 20px 0;
   }
   .header__container {
     flex-direction: row;
@@ -278,32 +284,46 @@ footer .adresa, .footer__menu, .copyright {
     padding: 20px 40px;
     font-size: 1.125rem;
   }
+  .dishes__title {
+    margin-top: 50px;
+  }
   .dishes__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
   .dish__card {
     flex: 1 1 calc(50% - 20px);
     box-sizing: border-box;
-    margin: 0;
+    margin: 10px;
   }
   .delivery__container {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: center;
+    align-items: stretch;
   }
   .delivery__photo {
     margin-right: 40px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    width: 50%;
   }
   .delivery__photo img {
-    max-width: calc(100% - 20px);
+    height: auto;
     border-radius: var(--radius);
+    width: auto;
+    object-fit: cover;
+    aspect-ratio: 3/4;
   }
   .delivery__text {
-    max-width: calc(50% - 20px);
+    max-width: 50%;
+  }
+  .delivery__text ul {
+    font-size: 1.25rem;
   }
   .footer__container {
     display: flex;
@@ -340,7 +360,7 @@ footer .adresa, .footer__menu, .copyright {
     max-width: 1100px;
   }
   header {
-    padding: 80px 0;
+    padding: 20px 0;
   }
   .header__container {
     flex-direction: row;
@@ -364,6 +384,11 @@ footer .adresa, .footer__menu, .copyright {
     flex-wrap: nowrap;
     justify-content: space-between;
     margin-bottom: 30px;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  .dishes__title {
+    margin: 50px 0 20px 0;
   }
   .dish__card {
     flex: 1 1 calc(25% - 20px);
@@ -379,11 +404,11 @@ footer .adresa, .footer__menu, .copyright {
     margin-right: 40px;
   }
   .delivery__photo img {
-    max-width: calc(100% - 20px);
+    max-width: 100%;
     border-radius: var(--radius);
   }
   .delivery__text {
-    width: calc(50% - 20px);
+    width: calc(80%);
   }
   .footer__container {
     display: flex;
