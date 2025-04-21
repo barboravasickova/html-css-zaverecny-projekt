@@ -38,9 +38,11 @@
 
 
   <!-- sekce JÍDELNÍ LÍSTEK -->
-  <div class="menu__container">
-    <div class="container">
-      <h2>Jídelní lístek</h2>
+  <div class="container">
+  
+      <h2 class="dishes__title">Jídelní lístek</h2>
+
+      <div class="dishes__container">
 
       <div class="dish__card">
         <img src="images/snidane.svg" alt="" width="40" height="40">
@@ -76,53 +78,68 @@
 
 
   <!-- sekce ROZVOZ -->
+  <div class="delivery__background">
   <div class="container">
-      <img src="images/rozvoz-na-sirku.jpg" alt="Rozvoz jídla domů">
+    <div class="delivery__container">
 
-      <h2>Nejrychlejší rozvoz jídla ve městě</h2>
+      <div class="delivery__photo">
+        <picture>
+          <source media="(min-width: 1100px)" srcset="images/rozvoz-na-vysku.jpg">
+          <source media="(min-width: 768px)" srcset="images/rozvoz-na-vysku.jpg">
+          <img src="images/rozvoz-na-sirku.jpg" alt="Rozvoz jídla domů">
+        </picture>
+      </div>
 
-      <ul>
-        <li>
-          <img src="images/hodiny.svg" alt="" width="40" height="40">
-          Dovezeme do 30 minut
-        </li>
-        <li>
-          <img src="images/cerstve.svg" alt="" width="40" height="40">
-          Vždy česrtvě uvařené
-        </li>
-        <li>
-          <img src="images/online.svg" alt="" width="40" height="40">
-          Objednáte online
-        </li>
-      </ul>
+      <div class="delivery__text">
+        <h2>Nejrychlejší rozvoz jídla ve městě</h2>
 
-      <p>Máte hlad a nechce se vám vařit? My to chápeme! Objednejte si u nás a my vám jídlo doručíme co nejrychleji až ke dveřím - teplé, voňavé a připravené s láskou. </p>
+        <ul>
+          <li>
+            <img src="images/hodiny.svg" alt="" width="40" height="40">
+            Dovezeme do 30 minut
+          </li>
+          <li>
+            <img src="images/cerstve.svg" alt="" width="40" height="40">
+            Vždy čerstvě uvařené
+          </li>
+          <li>
+            <img src="images/online.svg" alt="" width="40" height="40">
+            Objednáte online
+          </li>
+        </ul>
 
-      <a href="#">Objednat jídlo</a>
-  
+        <p>Máte hlad a nechce se vám vařit? My to chápeme! Objednejte si u nás a my vám jídlo doručíme co nejrychleji až ke dveřím - teplé, voňavé a připravené s láskou. </p>
+
+        <a href="#" class="button">Objednat jídlo</a>
+      </div>
+
+    </div>
+  </div>
   </div>
 
 
 
   <!-- PATIČKA -->
-  <div class="container">
-      <img src="images/logo-footer.svg" alt="Restaurace Bříško">
+  <footer>
+    <div class="container">
+        <img src="images/logo-footer.svg" alt="Restaurace Bříško" class="footer__logo">
 
-      <p>
-        Restaurace Bříško<br>
-        U pupíku 42<br>
-        123 45 Najedlov
-      </p>
+        <p>
+          Restaurace Bříško<br>
+          U pupíku 42<br>
+          123 45 Najedlov
+        </p>
 
-      <ul>
-        <li><a href="#">Jídelní lístek</a></li>
-        <li><a href="#">O nás</a></li>
-        <li><a href="#">Kontakt</a></li>
-        <li><a href="#">Rezervace</a></li>
-      </ul>
+        <ul>
+          <li><a href="#">Jídelní lístek</a></li>
+          <li><a href="#">O nás</a></li>
+          <li><a href="#">Kontakt</a></li>
+          <li><a href="#">Rezervace</a></li>
+        </ul>
 
-      <p>Copyright &copy; 2025 HTML a CSS kurz od Czechitas</p>
-  </div>
+        <p>Copyright &copy; 2025 HTML a CSS kurz od Czechitas</p>
+    </div>
+  </footer>
 
 </body>
 </html>
