@@ -216,7 +216,7 @@ nav {
 }
 
 .delivery__background {
-  background-color: var(--color-secondary-bright);
+  background-color: var(--color-section-bg);
   padding: 20px 0;
 }
 
